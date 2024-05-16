@@ -43,7 +43,7 @@ impl Editor {
             print!("Goodbye.\r\n");
         } else {
             Self::draw_row()?;
-            Terminal::move_cursor_to(0,0);
+            Terminal::move_cursor_to(0,0)?;
         }
         Ok(())
     }

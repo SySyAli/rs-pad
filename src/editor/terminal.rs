@@ -12,7 +12,7 @@ impl Terminal {
     pub fn initialize() -> Result<(), std::io::Error> {
         enable_raw_mode()?;
         Self::clear_screen()?;
-        Self::move_cursor_to(0,0);
+        Self::move_cursor_to(0,0)?;
         Ok(())
     }
     pub fn clear_screen() -> Result<(), std::io::Error> {
